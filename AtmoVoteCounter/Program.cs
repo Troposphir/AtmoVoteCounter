@@ -56,12 +56,14 @@ namespace AtmoVoteCounter
             if(!File.Exists(levelsFile))
             {
                 Console.WriteLine("Couldn't find levels file: {0}", levelsFile);
+                Console.ReadKey();
                 return;
             }
 
             if (!File.Exists(votesFile))
             {
-                Console.WriteLine("couldn't find votes file: {0}", votesFile);
+                Console.WriteLine("Couldn't find votes file: {0}", votesFile);
+                Console.ReadKey();
                 return;
             }
 
